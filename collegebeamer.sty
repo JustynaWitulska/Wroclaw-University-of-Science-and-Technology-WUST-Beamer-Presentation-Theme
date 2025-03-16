@@ -21,59 +21,22 @@
     \renewcommand{\qaStr}{\textsl{Thank you for listening!}} % \\ Your feedback will be highly appreciated!}}
 }
 
-\DeclareOption{zh}{
-    % add to the preamble: \usepackage{xeCJK}
-    % compile with xeLaTeX
-    \renewcommand{\tocStr}{目录}
-    \renewcommand{\qaStr}{\textbf{感谢您的聆听和反馈}}
+\DeclareOption{pl}{
+    \renewcommand{\tocStr}{Spis treści}
+    \renewcommand{\qaStr}{\textsl{Dziękuję za uwagę!}}
 }
 
 % colleges & institutes
 \newcommand{\maincolorRGB}{128, 57, 61}
-\newcommand{\colorlogoPath}{src/PolyU/color-logo.png}
-\newcommand{\translogoPath}{src/PolyU/trans-logo.png}
-\newcommand{\backgroundPath}{src/PolyU/background.png}
-
-\DeclareOption{polyu}{
-    \renewcommand{\maincolorRGB}{128, 57, 61}
-    \renewcommand{\colorlogoPath}{src/PolyU/color-logo.png}
-    \renewcommand{\translogoPath}{src/PolyU/trans-logo.png}
-    \renewcommand{\backgroundPath}{src/PolyU/background.png}
-}
+\newcommand{\colorlogoPath}{src/WUST/color-logo.png}
+\newcommand{\translogoPath}{src/WUST/trans-logo.png}
+\newcommand{\backgroundPath}{src/WUST/background.png}
 
 \DeclareOption{wust}{
     \renewcommand{\maincolorRGB}{128, 57, 61}
     \renewcommand{\colorlogoPath}{src/WUST/color-logo.png}
     \renewcommand{\translogoPath}{src/WUST/trans-logo.png}
     \renewcommand{\backgroundPath}{src/WUST/background.png}
-}
-
-\DeclareOption{szu}{
-    \renewcommand{\maincolorRGB}{124, 36, 64}
-    \renewcommand{\colorlogoPath}{src/SZU/color-logo.png}
-    \renewcommand{\translogoPath}{src/SZU/trans-logo.png}
-    \renewcommand{\backgroundPath}{src/SZU/background.png}
-}
-
-\DeclareOption{swu}{
-    \renewcommand{\maincolorRGB}{39, 32, 99}
-    \renewcommand{\colorlogoPath}{src/SWU/color-logo.png}
-    \renewcommand{\translogoPath}{src/SWU/trans-logo.png}
-    \renewcommand{\backgroundPath}{src/SWU/background.png}
-}
-
-\DeclareOption{hit}{
-    \renewcommand{\maincolorRGB}{42, 101, 128}
-    \renewcommand{\colorlogoPath}{src/hit/color-logo.png}
-    \renewcommand{\translogoPath}{src/hit/trans-logo.png}
-    \renewcommand{\backgroundPath}{src/hit/background.png}
-}
-
-\DeclareOption{saes}{
-    \renewcommand{\maincolorRGB}{5, 103, 81}
-    \renewcommand{\colorlogoPath}{src/SAES/color-logo.png}
-    \renewcommand{\translogoPath}{src/SAES/trans-logo.png}
-    \renewcommand{\backgroundPath}{src/SAES/background.png}
 }
 
 \ProcessOptions\relax
