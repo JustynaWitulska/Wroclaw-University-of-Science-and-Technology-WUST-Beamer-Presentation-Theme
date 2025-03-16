@@ -1,0 +1,106 @@
+\documentclass{beamer}
+\usepackage[wust, en]{collegeBeamer}
+\usepackage{lipsum}
+\usepackage[style=numeric,sorting=none]{biblatex}
+\addbibresource{mybibliography.bib}
+\setbeamertemplate{bibliography item}{\insertbiblabel} % <--- number references
+\setbeamertemplate{footline}[frame number]
+
+\renewcommand{\arraystretch}{0.8} % Optional, adjusts row height if needed
+\setlength{\tabcolsep}{4pt} % Optional, adjusts column spacing if needed
+\usepackage{graphicx}
+\AtBeginEnvironment{tabular}{\tiny} % Makes all table content tiny
+
+
+\definecolor{hrefcol}{RGB}{0, 0, 255} % Example: blue color
+\usepackage{algpseudocode}
+\usepackage{algorithm}
+% meta-data
+\title{College Beamer\\ Presentation Themes}
+\subtitle{Using \LaTeX\ to prepare slides}
+\author{Justyna Witulska (\bhref{https://pwr.edu.pl/en/}{WUST})}
+\date{Created: 16 March 2025}
+
+% document body
+\begin{document}
+
+\maketitle
+
+\begin{frame}
+    This template is a secondary creation of 
+    \bhref{https://www.overleaf.com/latex/templates/sintef-presentation/jhbhdffczpnx}{The Hong Kong Polytechnic University (PolyU) Beamer Presentation Theme} template from \bhref{mailto:qilong-kirov.liu@connect.polyu.hk}{Qi-long Liu} that is based on 
+    \bhref{https://www.overleaf.com/latex/templates/sintef-presentation/jhbhdffczpnx}{SINTEF Presentation} template from \bhref{mailto:federico.zenith@sintef.no}{Federico Zenith}. \vspace{\baselineskip}
+
+    This template is released under \bhref{https://creativecommons.org/licenses/by-nc/4.0/legalcode}{Creative Commons CC BY 4.0} license. \vspace{\baselineskip}
+
+    All rights reserved by \bhref{mailto:federico.zenith@sintef.no}{Federico Zenith}.\vspace{\baselineskip}
+
+
+    WUST logo source: \bhref{https://pwr.edu.pl/en/university/logo-and-presentations}{link (access: 16 March 2025)}
+    
+\end{frame}
+
+\section{Introduction}
+
+\begin{frame}{Example slide}
+    \lipsum[1]
+\end{frame}
+
+\begin{frame}{An example of using mathematical formulas}
+    The univariate random variable $Y$ is $\alpha$-stable distributed if its characteristic function $\varphi_Y(t):=E[exp(itY)]$ is defined in the following way \cite{nolan2021stable}:
+    
+    \begin{align}
+    \varphi_Y(t) = \begin{cases}
+    exp(-\gamma^{\alpha}|t|^{\alpha} \left( 1 - i\beta \cdot sgn(t) \cdot tan\left(\frac{\pi \alpha}{2}\right) \right) + i\delta t) &\text{  for  } \alpha \neq 1, \\
+    exp(-\gamma|t| \left( 1 + i\beta \frac{2}{\pi} \cdot sgn(t) \cdot ln(|t|) \right) + i\delta t) &\text{  for  } \alpha = 1,
+    \end{cases}
+    \end{align}
+    where $0<\alpha\leq 2$ is a stability index, $\beta \in [-1,1]$ is the skewness parameter, $\gamma>0$ is a scale parameter and $\delta \in \mathbb{R}$ is a location parameter. We denote $Y \sim S_{\alpha}(\gamma, \beta, \delta).$
+\end{frame}
+
+\begin{frame}{Code example}
+    \begin{algorithm}[H]
+    \begin{algorithmic}
+    \caption{Name}
+    \State $i \gets 11$
+    \If{$i\geq 5$} 
+    \State $i \gets i-1$
+    \Else
+    \If{$i\leq 3$}
+        \State $i \gets i+2$
+    \EndIf
+    \EndIf 
+    \end{algorithmic}
+    \end{algorithm}
+\end{frame}
+    
+\begin{frame}[fragile]{Figure example}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.3\linewidth]{src/WUST/trans-logo.png}
+        \caption{This is an example figure that you can download \bhref{https://pwr.edu.pl/en/university/logo-and-presentations}{here}.}
+        \label{fig:enter-label}
+    \end{figure}
+\end{frame}
+
+
+\section{Summary}
+    \begin{frame}
+    \frametitle{Conclusions}
+    \begin{itemize}
+    \item bullet 1
+    \item bullet 2
+    \item bullet 3
+    \end{itemize}
+\end{frame}
+
+\renewcommand{\bibfont}{\normalsize}
+\begin{frame}[allowframebreaks]{References}
+    \printbibliography[heading=none] % <----- heading= none is added in order to prevent a duplicate heading
+\end{frame}
+
+
+    \QApage
+
+
+\end{document}
