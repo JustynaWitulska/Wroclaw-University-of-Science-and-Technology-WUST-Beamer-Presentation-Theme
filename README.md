@@ -4,3 +4,19 @@ Wroclaw University of Science and Technology (WUST) Beamer Presentation Theme
 There is a Beamer template, that is modified versions of the [The Hong Kong Polytechnic University (PolyU) Beamer Presentation Theme](https://www.overleaf.com/latex/templates/sintef-presentation/jhbhdffczpnx) template from [Qi-long Liu](mailto:qilong-kirov.liu@connect.polyu.hk) that is based on [SINTEF Presentation](https://www.overleaf.com/latex/templates/sintef-presentation/jhbhdffczpnx) template from [Federico Zenith](mailto:federico.zenith@sintef.no) (all rights reserved by him).
 
 A big thanks to Federico Zenith and Qi-long Liu for creating such beautifully designed templates. I’ve made some changes connected with adding icons proper for WUST, and included new features to better suit the needs of my friends' and my own institutes.
+
+
+## Options & usage
+
+### Switch college/institute
+
+The code is consistent with the code provided in the [Qi-long Liu's GitHub repository](https://github.com/liu-qilong/college-beamer). Switching between different college/institute is quite easy, just add college/institute name (all lower case) to the `collegeBeamer` package. To switch to the WUST theme, add `wust, en` to the package:
+
+```
+\usepackage[wust,en]{collegeBeamer}
+```
+
+In the future, the option to select the Polish language will be added. 
+
+
+You can find the remaining available options and settings in the source code: [Qi-long Liu's GitHub repository](https://github.com/liu-qilong/college-beamer).
