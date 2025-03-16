@@ -10,13 +10,16 @@ A big thanks to Federico Zenith and Qi-long Liu for creating such beautifully de
 
 ### Switch college/institute
 
-The code is consistent with the code provided in the [Qi-long Liu's GitHub repository](https://github.com/liu-qilong/college-beamer). Switching between different college/institute is quite easy, just add college/institute name (all lower case) to the `collegeBeamer` package. To switch to the WUST theme, add `wust, en` to the package:
+The code is consistent with the code provided in the [Qi-long Liu's GitHub repository](https://github.com/liu-qilong/college-beamer). To switch to the WUST theme, add `wust, en` to the package:
 
 ```
 \usepackage[wust,en]{collegeBeamer}
 ```
-
-In the future, the option to select the Polish language will be added. 
+if you want to use english version of the slides or
+```
+\usepackage[wust,pl]{collegeBeamer}
+```
+to select polish language. 
 
 
 You can find the remaining available options and settings in the source code: [Qi-long Liu's GitHub repository](https://github.com/liu-qilong/college-beamer).
