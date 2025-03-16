@@ -20,3 +20,8 @@ In the future, the option to select the Polish language will be added.
 
 
 You can find the remaining available options and settings in the source code: [Qi-long Liu's GitHub repository](https://github.com/liu-qilong/college-beamer).
+
+
+## Example slides
+
+![example_slides](https://github.com/user-attachments/assets/a8b586d8-9967-460f-ae20-c3b42e01279b)
